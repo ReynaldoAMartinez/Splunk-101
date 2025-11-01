@@ -1,5 +1,6 @@
 # Splunk 101
-Objective
+# Objective
+
 Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
 Main takeaways covered in this learning are:
 - Deploy and configure Splunk
