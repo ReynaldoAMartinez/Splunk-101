@@ -8,6 +8,16 @@ Main takeaways covered in this learning are:
 - Create alerts, dashboards, and scheduled reports
 - Complete a SOC investigation capstone to analyze a simulated compromise involving MITRE ATT&CK phases: Initial Access, Execution, Persistence, and Command and Control, with the goal to understand how to identify, correlate, and investigate each stage using Splunk data.
 
+<h2>Environments Used </h2>
+
+
+
+- <b>VMWare Worstation</b>
+- <b>Windows 11 </b> 
+- <b>Ubuntu Server 22.04</b>
+- <b>Splunk</b>
+
+
 The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
 
 Skills Learned
