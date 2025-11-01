@@ -1,6 +1,6 @@
 # Splunk 101
 Objective
-Through this project I understood of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
+Through this project I have gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
 
 - Deploy and configure Splunk
 - Ingest and parse logs
