@@ -1,4 +1,5 @@
 # Splunk 101
+<!-- 
 # Objective
 
 Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
@@ -42,3 +43,4 @@ Every screenshot should have some text explaining what the screenshot is about.
 Example below.
 
 Ref 1: Network Diagram
+-->
