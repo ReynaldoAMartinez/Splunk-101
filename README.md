@@ -4,7 +4,7 @@
 
 # Purpose
 
-Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
+Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, identify, correlate, investigate, and respond to security data.
 
 # Main takeaways covered in this learning are 
 
@@ -28,7 +28,7 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 | Splunk 101 |  |  |  |
 |:---------------------------:|:-----------------:|:-----------------:|:-----------------:|
 | **LESSONS 1-8** | **LESSONS 9-16** | **LABS** | **CAPSTONE CHALLENGE** |
-| *SOC Lab and Sentinel Setup* | *Email Security with Defender for Office 365* | *Endpoint Security with Defender for Endpoint* | *Identity with Entra ID* |
+<!--| *SOC Lab and Sentinel Setup* | *Email Security with Defender for Office 365* | *Endpoint Security with Defender for Endpoint* | *Identity with Entra ID* | -->
 | [Day 1-9](docs/module1.md) | [Day 10-16](docs/module2.md) | [Day 17-23](docs/module3.md) | [Day 24-30](docs/module4.md) |
 
 </div>
