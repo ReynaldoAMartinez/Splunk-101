@@ -33,16 +33,16 @@ The project is divided in ten labs, and one capstone challenge. Using Splunk, th
 
 # Labs
 
-[Creating an index](lab01.md)
-[Setting up Universal Forwarder](lab02.md)
-[Uploading Custom Logs](lab03.md)
-[Field Extractions](lab04.md)
-[SPL & Transforming Commands](lab05.md)
-[Creating Lookups](lab06.md)
-[Dashboard Creation](lab07.md)
-[Creating Actionable Alerts](lab08.md)
-[Scheduling Reports](lab09.md)
-[Install Splunk Apps](lab10.md)
+1. [Creating an index](lab01.md)
+2. [Setting up Universal Forwarder](lab02.md)
+3. [Uploading Custom Logs](lab03.md)
+4. [Field Extractions](lab04.md)
+5. [SPL & Transforming Commands](lab05.md)
+6. [Creating Lookups](lab06.md)
+7. [Dashboard Creation](lab07.md)
+8. [Creating Actionable Alerts](lab08.md)
+9. [Scheduling Reports](lab09.md)
+10. [Install Splunk Apps](lab10.md)
 
 # Capstone Challenge
 
