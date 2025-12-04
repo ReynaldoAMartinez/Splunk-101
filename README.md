@@ -33,7 +33,7 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 
 </div>
 
-
+[01](docs/Day01.md) | [02](docs/Day02.md) | [03](docs/Day03.md) | [04](docs/Day04.md) | [05](docs/Day05.md) | [06](docs/Day06.md) | [07](docs/Day07.md) | [08](docs/Day08.md) | [09](docs/Day09.md) | [10](docs/Day10.md) | 
 
 
 
