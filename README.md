@@ -27,8 +27,8 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 
 | Splunk 101 |  |  |  |
 |:---------------------------:|:-----------------:|:-----------------:|:-----------------:|
-| **LESSONS 1-8** | **LESSONS 9-16** | **LABS** | **CAPSTONE CHALLENGE** |
-| *SOC Lab and Sentinel Setup* | *Email Security with Defender for Office 365* | *Endpoint Security with Defender for Endpoint* | *Identity with Entra ID* | 
+| **LESSONS** | **LESSONS** | **LABS** | **CAPSTONE** |
+| *1-8* | *9-16* | *Splunk* | *Challenge* | 
 | [Day 1-9](docs/module1.md) | [Day 10-16](docs/module2.md) | [Day 17-23](docs/module3.md) | [Day 24-30](docs/module4.md) |
 
 </div>
