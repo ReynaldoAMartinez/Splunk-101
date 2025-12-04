@@ -28,7 +28,7 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 
 | LAB | LAB | LAB | LAB | LAB | LAB | LAB | LAB | LAB | LAB | CAPSTONE |
 |------|------|------|------|------|------|------|------|------|------|---------------------|
-| [Creating an index](docs/lab01.md) | [02](docs/lab02.md) | [03](docs/lab03.md) | [04](docs/lab04.md) | [05](docs/lab05.md) | [06](docs/lab06.md) | [07](docs/lab07.md) | [08](docs/lab08.md) | [09](docs/lab09.md) | [10](docs/lab10.md) | [Final Challenge](docs/capstone.md) |
+| [Creating an index](docs/lab01.md) | [Setting up Universal Forwarder](docs/lab02.md) | [Uploading Custom Logs](docs/lab03.md) | [Field Extractions](docs/lab04.md) | [SPL & Transforming Commands](docs/lab05.md) | [Creating Lookups](docs/lab06.md) | [Dashboard Creation](docs/lab07.md) | [Creating Actionable Alerts](docs/lab08.md) | [Scheduling Reports](docs/lab09.md) | [Install Splunk Apps](docs/lab10.md) | [Final Challenge](docs/capstone.md) |
 
 </div>
 
