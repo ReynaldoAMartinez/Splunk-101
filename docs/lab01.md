@@ -18,7 +18,7 @@ By default I see some indexes already created. Click on the "New index" button.
 
 <img width="2440" height="770" alt="image (1)" src="https://github.com/user-attachments/assets/2c99a228-f002-4933-993c-833fc12ade16" />
 
-I called my index "mydifr-soc"
+I called my index "mydfir-soc"
 
 <img width="798" height="919" alt="image (2)" src="https://github.com/user-attachments/assets/8ded9b17-5e80-450d-9141-9fc361928aee" />
 
