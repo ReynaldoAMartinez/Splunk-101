@@ -32,6 +32,21 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 
 </div>
 
+# Labs & Capstone Navigation
+
+1. [Creating an index](lab01.md)
+2. [Setting up Universal Forwarder](lab02.md)
+3. [Uploading Custom Logs](lab03.md)
+4. [Field Extractions](lab04.md)
+5. [SPL & Transforming Commands](lab05.md)
+6. [Creating Lookups](lab06.md)
+7. [Dashboard Creation](lab07.md)
+8. [Creating Actionable Alerts](lab08.md)
+9. [Scheduling Reports](lab09.md)
+10. [Install Splunk Apps](lab10.md)
+11. [Final Challenge](capstone.md)
+
+
 
 <!--
 <img width="1024" height="1024" alt="UnderConstruction" src="https://github.com/user-attachments/assets/37485afa-fe9c-49e1-8700-75fc79e0d7e2" />
