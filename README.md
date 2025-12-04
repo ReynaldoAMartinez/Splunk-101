@@ -46,7 +46,7 @@ The project is divided in ten labs, and one capstone challenge. Using Splunk, th
 9. [Scheduling Reports](lab09.md)
 10. [Install Splunk Apps](lab10.md)
 
-# Capstone Challenge
+# Capstone
 
 [Final Challenge](capstone.md)
 
