@@ -33,30 +33,11 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 
 </div>
 
-<table>
-  <tr>
-    <th colspan="10">LABS</th>
-    <th>CAPSTONE CHALLENGE</th>
-  </tr>
-  <tr>
-    <td><a href="">Lab 01</a></td>
-    <td><a href="">Lab 02</a></td>
-    <td><a href="">Lab 03</a></td>
-    <td><a href="">Lab 04</a></td>
-    <td><a href="">Lab 05</a></td>
-    <td><a href="">Lab 06</a></td>
-    <td><a href="">Lab 07</a></td>
-    <td><a href="">Lab 08</a></td>
-    <td><a href="">Lab 09</a></td>
-    <td><a href="">Lab 10</a></td>
-    <td><a href="">Final Challenge</a></td>
-  </tr>
-</table>
 
 
 | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | CAPSTONE CHALLENGE |
 |------|------|------|------|------|------|------|------|------|------|---------------------|
-| [Lab 01]() | [Lab 02]() | [Lab 03]() | [Lab 04]() | [Lab 05]() | [Lab 06]() | [Lab 07]() | [Lab 08]() | [Lab 09]() | [Lab 10]() | [Final Challenge]() |
+| [Lab 01](docs/lab01.md) | [Lab 02](docs/lab02.md) | [Lab 03](docs/lab03.md) | [Lab 04](docs/lab04.md) | [Lab 05](docs/lab05.md) | [Lab 06](docs/lab06.md) | [Lab 07](docs/lab07.md) | [Lab 08](docs/lab08.md) | [Lab 09](docs/lab09.md) | [Lab 10](docs/lab10.md) | [Final Challenge](docs/capstone.md) |
 
 
 
