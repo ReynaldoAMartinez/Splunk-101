@@ -1,9 +1,54 @@
+<!-- # Splunk 101 
+-->
 # Splunk 101
+
+# Purpose
+
+Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
+Main takeaways covered in this learning are:
+- Deploy and configure Splunk
+- Ingest and parse logs
+- Create alerts, dashboards, and scheduled reports
+- Complete a SOC investigation capstone to analyze a simulated compromise involving MITRE ATT&CK phases: Initial Access, Execution, Persistence, and Command and Control, with the goal to understand how to identify, correlate, and investigate each stage using Splunk data.. 
+___
+
+# Project Overview
+
+The project is divided in sixteen lessons, ten labs, and one capstone challenge. Using Splunk, this learning aims to demonstrate what a contemporary SIEM does. 
+
+<div align="center">
+
+| 30-Day Microsoft Challenge |  |  |  |
+|:---------------------------:|:-----------------:|:-----------------:|:-----------------:|
+| **MODULE 1** | **MODULE 2** | **MODULE 3** | **MODULE 4** |
+| *SOC Lab and Sentinel Setup* | *Email Security with Defender for Office 365* | *Endpoint Security with Defender for Endpoint* | *Identity with Entra ID* |
+| [Day 1-9](docs/module1.md) | [Day 10-16](docs/module2.md) | [Day 17-23](docs/module3.md) | [Day 24-30](docs/module4.md) |
+
+</div>
+
+
+
+
+
+# Microsoft Security & Cloud Tools in My Lab 
+
+🧩 Microsoft 365 E5 Trial License — provides enterprise-grade access to Microsoft’s full security stack (Defender, Sentinel, Intune, etc.)
+
+☁️ Microsoft Azure Portal — main management console for virtual machines, Sentinel, and other Azure resources
+
+🛰️ Microsoft Sentinel — SIEM and SOAR platform for incident detection, investigation, and response
+
+🛡️ Microsoft Defender XDR — unified extended detection and response (XDR) platform for endpoints, identities, and cloud resources
+
+🔐 Microsoft Entra ID (Azure Active Directory) — cloud-based identity and access management service
+
+🧭 Microsoft Intune — endpoint management and device compliance service integrated with Entra ID
+
 <!--
 <img width="1024" height="1024" alt="UnderConstruction" src="https://github.com/user-attachments/assets/37485afa-fe9c-49e1-8700-75fc79e0d7e2" />
 -->
 
- 
+<!-- 
 # Objective
 
 Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
@@ -45,6 +90,6 @@ drag & drop screenshots here or use imgur and reference them using imgsrc
 Every screenshot should have some text explaining what the screenshot is about.
 
 Example below.
-
+-->
 Ref 1: Network Diagram
 
