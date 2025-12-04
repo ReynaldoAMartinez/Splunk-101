@@ -14,7 +14,7 @@ Through this project I gained practical understanding of what Splunk is, how to 
 
 🛰️ Create alerts, dashboards, and scheduled reports
 
-🛡️ Complete a SOC investigation capstone to analyze a simulated compromise involving MITRE ATT&CK phases: Initial Access, Execution, Persistence, and Command and Control, with the goal to understand how to identify, correlate, and investigate each stage using Splunk data.
+🛡️ Complete a SOC investigation capstone to analyze a simulated compromise involving MITRE ATT&CK phases: Initial Access, Execution, Persistence, and Command and Control, with the goal to understand how to identify, correlate, and investigate each stage using Splunk data
 
 
 ___
