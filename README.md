@@ -22,13 +22,15 @@ ___
 # Project Overview
 
 The project is divided in ten labs, and one capstone challenge. Using Splunk, this learning aims to demonstrate what a contemporary SIEM does. 
-
+<!--
 <div align="center">
 
-<!--
+
 | LAB | LAB | LAB | LAB | LAB | LAB | LAB | LAB | LAB | LAB | CAPSTONE |
 |------|------|------|------|------|------|------|------|------|------|---------------------|
 | [Creating an index](docs/lab01.md) | [Setting up Universal Forwarder](docs/lab02.md) | [Uploading Custom Logs](docs/lab03.md) | [Field Extractions](docs/lab04.md) | [SPL & Transforming Commands](docs/lab05.md) | [Creating Lookups](docs/lab06.md) | [Dashboard Creation](docs/lab07.md) | [Creating Actionable Alerts](docs/lab08.md) | [Scheduling Reports](docs/lab09.md) | [Install Splunk Apps](docs/lab10.md) | [Final Challenge](docs/capstone.md) |
+
+</div>
 -->
 
 # Labs
@@ -48,7 +50,7 @@ The project is divided in ten labs, and one capstone challenge. Using Splunk, th
 
 [Final Challenge](capstone.md)
 
-</div>
+
 
 <!--
 <img width="1024" height="1024" alt="UnderConstruction" src="https://github.com/user-attachments/assets/37485afa-fe9c-49e1-8700-75fc79e0d7e2" />
