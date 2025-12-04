@@ -30,9 +30,8 @@ The project is divided in ten labs, and one capstone challenge. Using Splunk, th
 |------|------|------|------|------|------|------|------|------|------|---------------------|
 | [Creating an index](docs/lab01.md) | [Setting up Universal Forwarder](docs/lab02.md) | [Uploading Custom Logs](docs/lab03.md) | [Field Extractions](docs/lab04.md) | [SPL & Transforming Commands](docs/lab05.md) | [Creating Lookups](docs/lab06.md) | [Dashboard Creation](docs/lab07.md) | [Creating Actionable Alerts](docs/lab08.md) | [Scheduling Reports](docs/lab09.md) | [Install Splunk Apps](docs/lab10.md) | [Final Challenge](docs/capstone.md) |
 -->
-</div>
 
-# Labs & Capstone Navigation
+# Labs
 
 1. [Creating an index](lab01.md)
 2. [Setting up Universal Forwarder](lab02.md)
@@ -44,9 +43,12 @@ The project is divided in ten labs, and one capstone challenge. Using Splunk, th
 8. [Creating Actionable Alerts](lab08.md)
 9. [Scheduling Reports](lab09.md)
 10. [Install Splunk Apps](lab10.md)
-11. [Final Challenge](capstone.md)
 
+# Capstone Challenge
 
+1. [Final Challenge](capstone.md)
+
+</div>
 
 <!--
 <img width="1024" height="1024" alt="UnderConstruction" src="https://github.com/user-attachments/assets/37485afa-fe9c-49e1-8700-75fc79e0d7e2" />
