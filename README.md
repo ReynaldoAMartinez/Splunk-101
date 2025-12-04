@@ -25,21 +25,12 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 
 <div align="center">
 
-| Splunk 101 |  |  |  |
-|:---------------------------:|:-----------------:|:-----------------:|:-----------------:|
-| **LESSONS** | **LESSONS** | **LABS** | **CAPSTONE** |
-| *1-8* | *9-16* | *1-10* | *Challenge* | 
-| [Day 1-9](docs/module1.md) | [Day 10-16](docs/module2.md) | [Day 17-23](docs/module3.md) | [Day 24-30](docs/module4.md) |
-
-</div>
-
-
 
 | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | CAPSTONE CHALLENGE |
 |------|------|------|------|------|------|------|------|------|------|---------------------|
 | [Lab 01](docs/lab01.md) | [Lab 02](docs/lab02.md) | [Lab 03](docs/lab03.md) | [Lab 04](docs/lab04.md) | [Lab 05](docs/lab05.md) | [Lab 06](docs/lab06.md) | [Lab 07](docs/lab07.md) | [Lab 08](docs/lab08.md) | [Lab 09](docs/lab09.md) | [Lab 10](docs/lab10.md) | [Final Challenge](docs/capstone.md) |
 
-
+</div>
 
 
 <!--
