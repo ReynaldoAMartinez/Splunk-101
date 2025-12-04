@@ -72,7 +72,7 @@ Now we should see 42 events under the Application log
 
 ```bash
 source="application.csv" host="FRONTDESK-PC1" index="mydfir-soc" sourcetype="WinEvent:Application"
-
+```
 
 <img width="1519" height="587" alt="image (8)" src="https://github.com/user-attachments/assets/9e212f46-b164-465b-a1f0-889a2484353d" />
 
