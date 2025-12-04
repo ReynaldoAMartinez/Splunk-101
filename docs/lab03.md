@@ -76,6 +76,60 @@ source="application.csv" host="FRONTDESK-PC1" index="mydfir-soc" sourcetype="Win
 
 <img width="1519" height="587" alt="image (8)" src="https://github.com/user-attachments/assets/9e212f46-b164-465b-a1f0-889a2484353d" />
 
+repeat the steps for the other two csv files  ( defender, powershell )
+
+Name —> WinEvent:Defender   
+
+9 events
+
+<img width="1321" height="611" alt="image" src="https://github.com/user-attachments/assets/20b28bdf-e3d3-440e-958f-c77fd1c5a7cb" />
+
+```bash
+source="defender.csv" host="FRONTDESK-PC1" index="mydfir-soc" sourcetype="WinEvent:Defender"
+```
+
+Name —> WinEvent:Powershell
+
+41 events
+
+<img width="1211" height="594" alt="image (1)" src="https://github.com/user-attachments/assets/6533cc65-c5a5-48bb-b856-d30a975c05b6" />
+
+```bash
+source="powershell.csv" host="FRONTDESK-PC1" index="mydfir-soc" sourcetype="WinEvent:Powershell"
+```
+
+New search
+```bash
+index="mydfir-soc" sourcetype="WinEvent:Powershell"
+|stats count by extracted_host
+```
+
+<img width="550" height="390" alt="image (2)" src="https://github.com/user-attachments/assets/e074eb8e-4ce5-498f-8f4b-bbf4b065b18d" />
+
+Assigment —> load the rest of the files
+
+Security
+
+<img width="1759" height="632" alt="image (3)" src="https://github.com/user-attachments/assets/1c608a80-7c02-4499-9767-21493c42b55e" />
+
+```bash
+source="security.csv" host="FRONTDESK-PC1" index="mydfir-soc" sourcetype="WinEvent:Security"
+```
+
+Suricata
+
+<img width="1736" height="706" alt="image (4)" src="https://github.com/user-attachments/assets/d2bb1763-3e9f-48b7-ba2d-d46eeb7cf3ff" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
