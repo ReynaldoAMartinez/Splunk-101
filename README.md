@@ -6,7 +6,7 @@
 
 Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, identify, correlate, investigate, and respond to security data.
 
-# Main takeaways covered in this learning are 
+# Main takeaways covered in this learning
 
 🧩 Deploy and configure Splunk
 
