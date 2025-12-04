@@ -1,9 +1,9 @@
 # Splunk 101
-
+<!--
 <img width="1024" height="1024" alt="UnderConstruction" src="https://github.com/user-attachments/assets/37485afa-fe9c-49e1-8700-75fc79e0d7e2" />
+-->
 
-
-<!-- 
+ 
 # Objective
 
 Through this project I gained practical understanding of what Splunk is, how to deploy it and how to use it effectively to query, visualize, and respond to security data.
@@ -47,4 +47,4 @@ Every screenshot should have some text explaining what the screenshot is about.
 Example below.
 
 Ref 1: Network Diagram
--->
+
