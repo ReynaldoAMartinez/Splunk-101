@@ -54,6 +54,9 @@ The project is divided in sixteen lessons, ten labs, and one capstone challenge.
 </table>
 
 
+| LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | LABS | CAPSTONE CHALLENGE |
+|------|------|------|------|------|------|------|------|------|------|---------------------|
+| [Lab 01]() | [Lab 02]() | [Lab 03]() | [Lab 04]() | [Lab 05]() | [Lab 06]() | [Lab 07]() | [Lab 08]() | [Lab 09]() | [Lab 10]() | [Final Challenge]() |
 
 
 
