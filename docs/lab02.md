@@ -7,10 +7,11 @@ Go to www.splunk.com to download the Splunk Universal Forwarder
 
 <img width="502" height="394" alt="image (2)" src="https://github.com/user-attachments/assets/f54b9b44-84a7-4664-a2fc-4afd49bd69c8" />
 
+Access Splunk / Settings / Forwarding and receiving
 <img width="516" height="411" alt="image (3)" src="https://github.com/user-attachments/assets/a0ac53af-5273-4abe-8c15-125bd19c163e" />
 
 
-Access Splunk / Settings / Forwarding and receiving
+
 <img width="617" height="631" alt="image (4)" src="https://github.com/user-attachments/assets/c3ada703-57a1-428e-8d16-a98829559675" />
 
 <img width="1106" height="442" alt="image (5)" src="https://github.com/user-attachments/assets/91645dd7-107b-40d8-a259-aa16a87d5e7c" />
