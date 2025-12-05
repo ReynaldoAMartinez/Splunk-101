@@ -6,9 +6,7 @@ I installed key applications and add-ons that support log normalization, parsing
 - 🛡️ **Splunk Add-on for Sysmon**
 
 
-Search & reporting / Manage Apps
-
-Now select  Find more apps
+Search & reporting / Find more apps
 
 <img width="407" height="293" alt="image (1)" src="https://github.com/user-attachments/assets/c82abb49-89b8-4158-b45f-1381a503e22b" />
 
