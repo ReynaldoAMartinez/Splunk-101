@@ -5,21 +5,18 @@ I installed key applications and add-ons that support log normalization, parsing
 - 🪟 **Splunk Add-on for Microsoft Windows**
 - 🛡️ **Splunk Add-on for Sysmon**
 
-Open splunk in the browser
 
-Search & reporting
-
-Manage Apps
-
-Install app from file   # to download two custom applications created for this course
-
-<img width="1402" height="517" alt="image" src="https://github.com/user-attachments/assets/4c2dd50c-36ed-4c2f-9bb5-874c86bd5c84" />
+Search & reporting / Manage Apps
 
 Now select  Find more apps
 
 <img width="407" height="293" alt="image (1)" src="https://github.com/user-attachments/assets/c82abb49-89b8-4158-b45f-1381a503e22b" />
 
 type Windows
+
+
+<img width="2223" height="1266" alt="image (4)" src="https://github.com/user-attachments/assets/3b6f4235-55c7-4372-8870-8d9e9ef66ab5" />
+
 
 # Install Splunk Add-on for Windows
 
