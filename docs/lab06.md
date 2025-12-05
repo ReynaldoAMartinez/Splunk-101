@@ -1,6 +1,7 @@
 # Creating Lookups
 
 Created a csv file called vip-users.csv
+
 <img width="239" height="178" alt="image" src="https://github.com/user-attachments/assets/8a7bf7c9-1c39-4b66-b117-fa186d7b5565" />
 
 Opened lookups in Splunk
