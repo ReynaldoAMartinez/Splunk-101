@@ -12,11 +12,10 @@ Now select  Find more apps
 
 <img width="407" height="293" alt="image (1)" src="https://github.com/user-attachments/assets/c82abb49-89b8-4158-b45f-1381a503e22b" />
 
-type Windows
-
 
 <img width="2223" height="1266" alt="image (4)" src="https://github.com/user-attachments/assets/3b6f4235-55c7-4372-8870-8d9e9ef66ab5" />
 
+type Windows
 
 # Install Splunk Add-on for Windows
 
