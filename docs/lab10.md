@@ -13,7 +13,7 @@ Search & reporting / Find more apps
 
 <img width="2223" height="1266" alt="image (4)" src="https://github.com/user-attachments/assets/3b6f4235-55c7-4372-8870-8d9e9ef66ab5" />
 
-type Windows
+Type Windows, and click on Install 
 
 # Install Splunk Add-on for Windows
 
@@ -22,12 +22,16 @@ type Windows
 
 The add-on uses Splunk Universal Forwarder or Heavy Forwarder installed on Windows machines to collect data.
 
+
 # Install next apps Splunk Add-on for Sysmon
+
+Type Sysmon, and click on Install
 
 <img width="508" height="252" alt="image (3)" src="https://github.com/user-attachments/assets/6162467a-9aff-4a65-9810-6d753a8456fa" />
 
 
 This setup ensures that Splunk receives the full fidelity of Sysmon logs for analysis.
+
 
 # What I learned about these Splunk Add-on
 
