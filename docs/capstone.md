@@ -1,4 +1,4 @@
-**Scenario:**
+# **Scenario:**
 
 Ryan Adams, a local administrator at a small dental clinic, contacted the **MahCyberDefense** **SOC** hotline after suspecting his computer may have been compromised. He explained that around **October 15 2025 at 13:00 UTC**, his mouse was randomly moving so he became suspicious.
 
