@@ -162,6 +162,8 @@ index=endpoint EventCode=13 host=FRONTDESK-PC1 TargetObject="*Run*"
 
 It launches Microsoft Edge during Windows login/startup, often to resume the last browsing session or display the default start page.
 
+<p align="center">
+  
 **SOC Investigation Report - Kerning City Dental (KCD)**
 
 **Incident:**
@@ -175,7 +177,7 @@ Ryan Adams (CEO & Lead Dentist)
 **Date of Report:**
 
 October 2025
-
+</p>
 
 # **Findings (What did you find)**
 
