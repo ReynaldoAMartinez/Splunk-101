@@ -169,7 +169,12 @@ Suspicious Remote Activity on BACKOFFICE-PC1
 
 **Reported by:**
 
-Reynaldo Martinez
+Ryan Adams – CEO & Lead Dentist
+
+**Prepared by:**
+
+Reynaldo Martinez – SOC Analyst
+
 
 **Date of Report:**
 
