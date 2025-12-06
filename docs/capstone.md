@@ -136,13 +136,15 @@ index=* EventCode=3 host=FRONTDESK-PC1
 
 <img width="2192" height="446" alt="image (5)" src="https://github.com/user-attachments/assets/c5244a7c-892c-4956-8804-2344a88200ba" />
 
-157[.]245[.]46[.]190 --> This IP was reported 106 times (AbuseIPDB)
+From the previous results, I can see a remote connection to the external **IP 157[.]245[.]46[.]190** using the port **8888**
+
+This IP was reported 106 times (AbuseIPDB)
 
 <img width="713" height="758" alt="image (6)" src="https://github.com/user-attachments/assets/0090150c-2567-4405-8e71-df67f3d1ec53" />
 
 <img width="1353" height="820" alt="image (7)" src="https://github.com/user-attachments/assets/ba7c6ef7-c990-4ddf-8872-5d9a669a5f1d" />
 
-Also Virustotal reported the IP as malicious
+Same IP was reported as malicious in Virustotal
 
 <img width="1622" height="746" alt="image (8)" src="https://github.com/user-attachments/assets/e5564a25-a9e6-4916-8329-9801f31029fd" />
 
