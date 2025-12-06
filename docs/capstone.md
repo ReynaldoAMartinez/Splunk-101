@@ -75,6 +75,7 @@ index=* EventCode=4648 host=FRONTDESK-PC1  user="Ryan.Adams"
 | sort  _time
 ```
 <img width="2430" height="352" alt="image" src="https://github.com/user-attachments/assets/f7fdeec4-0cea-47d8-8d79-a46ca60c6b4c" />
+
 ___
 
 Checked for "Special Privileges Assigned --> Admin logons, privilege escalation"
@@ -86,7 +87,7 @@ index=* EventCode=4672 host=FRONTDESK-PC1 user="Ryan.Adams"
 
 <img width="2408" height="405" alt="image (1)" src="https://github.com/user-attachments/assets/8603bf57-7a3f-43dd-abc4-2191194e68e2" />
 
-SeSecurityPrivilege --> is a Windows user right (privilege) that allows an account to manage auditing and security logs.
+The privilege "SeSecurityPrivilege" was found. It is a Windows user right (privilege) that allows an account to manage auditing and security logs.
 ___
 
 Checked for "PowerShell Script Block Logging - PowerShell-based attacks"
