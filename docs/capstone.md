@@ -120,7 +120,7 @@ index=* host=FRONTDESK-PC1 EventCode=1 user="Ryan.Adams"
 
 <img width="2431" height="1128" alt="image (4)" src="https://github.com/user-attachments/assets/323a3b08-e3f6-4706-b9cb-bfcb9a758928" />
 
-From the previous query, I found a suspicious binary **python.exe** loated in Ryan's Music folder.
+From the previous query, I found a suspicious binary **python.exe** located in Ryan's Music folder.
 
 ___
 
@@ -165,6 +165,9 @@ index=endpoint EventCode=11 host=FRONTDESK-PC1 TargetFilename="*temp*"   user="R
 ```
 
 <img width="2402" height="571" alt="image (11)" src="https://github.com/user-attachments/assets/9d78ef49-7e50-4c1b-b20c-f885bcdac40f" />
+
+Previous output shows **PowerShell** activity showed directory changes and **scriptblock creation**
+
 ___
 
 Checked for "Registry Persistence Checks (Sysmon Event ID 13)"
