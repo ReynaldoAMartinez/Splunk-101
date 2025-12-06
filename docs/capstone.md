@@ -76,7 +76,7 @@ index=* EventCode=4648 host=FRONTDESK-PC1  user="Ryan.Adams"
 ```
 <img width="2430" height="352" alt="image" src="https://github.com/user-attachments/assets/f7fdeec4-0cea-47d8-8d79-a46ca60c6b4c" />
 
-It showed two lateral movement.
+It showed attempts of lateral movement.
 ___
 
 Checked for "Special Privileges Assigned --> Admin logons, privilege escalation"
