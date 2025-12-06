@@ -46,9 +46,10 @@ It shows a source IP and the Logon Types for the successful logins
 src_ip = 172.16.0.184
 
 Logon_Type
-3 --> Network --> SMB file share access, lateral movement. -->  The logon occurred over the network, not locally.
 
-7 --> Unlock --> Workstation unlock --> The user unlocked a workstation that was already logged in.
+3 (Network) The logon occurred over the network, not locally.
+
+7 (Unlock)  The user unlocked a workstation that was already logged in.
 
 Checked for Failed Login Attempts (EventCode 4625)
 
