@@ -223,7 +223,6 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 - Lateral movement from FRONTDESK-PC1 to BACKOFFICE-PC1
 - Execution of suspicious Python malware
 - Outbound C2 connection
-- PowerShell scriptblock creation
 - Creation of persistence via Windows Scheduled Task (“PythonUpdate”)
 
 ## **When did this occur and is it still happening?**
