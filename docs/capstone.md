@@ -162,9 +162,9 @@ index=endpoint EventCode=13 host=FRONTDESK-PC1 TargetObject="*Run*"
 
 It launches Microsoft Edge during Windows login/startup, often to resume the last browsing session or display the default start page.
 
-<p align="center">
-  
-**SOC Investigation Report - Kerning City Dental (KCD)**
+<div align="center">
+ <p> 
+<h2>**SOC Investigation Report - Kerning City Dental (KCD)**</h2>
 
 **Incident:**
 
@@ -172,12 +172,13 @@ Suspicious Remote Activity on BACKOFFICE-PC1
 
 **Reported by:**
 
-Ryan Adams (CEO & Lead Dentist)
+Reynaldo Martinez
 
 **Date of Report:**
 
 October 2025
 </p>
+</div>
 
 # **Findings (What did you find)**
 
