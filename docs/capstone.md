@@ -148,25 +148,11 @@ Same IP was reported as malicious in Virustotal
 
 <img width="1622" height="746" alt="image (8)" src="https://github.com/user-attachments/assets/e5564a25-a9e6-4916-8329-9801f31029fd" />
 
-The IP is linked to the malware Sliver C2 at 157[.]245[.]46[.]190[:]8888   and  a threat type: botnet_cc
+The IP is linked to the malware **Sliver C2** at **157[.]245[.]46[.]190[:]8888**   and  a threat type: **botnet_cc**
 
 <img width="638" height="928" alt="image (9)" src="https://github.com/user-attachments/assets/07de85fa-0fa3-473c-9b1c-5f885a1cf7e4" />
 
 <img width="1133" height="482" alt="image (10)" src="https://github.com/user-attachments/assets/d700da3d-3a62-4134-bad9-d5a492f78695" />
-
-___
-
-Checked for "Files Created (Sysmon Event ID 11)"
-
-```bash
-index=endpoint EventCode=11 host=FRONTDESK-PC1 TargetFilename="*temp*"   user="Ryan.Adams" 
-| table  _time, Image, TargetFilename, User   
-| sort  _time desc
-```
-
-<img width="2402" height="571" alt="image (11)" src="https://github.com/user-attachments/assets/9d78ef49-7e50-4c1b-b20c-f885bcdac40f" />
-
-Previous output shows **PowerShell** activity showed directory changes and **scriptblock creation**
 
 ___
 
