@@ -101,6 +101,8 @@ index=endpoint EventCode=4104  host="FRONTDESK-PC1"
 
 <img width="1661" height="244" alt="image (3)" src="https://github.com/user-attachments/assets/4c0b0f0a-611e-4af1-b2ec-12d946109fa7" />
 
+From this query the next findings were found:
+
 schtasks.exe /create /tn "PythonUpdate" /tr "C:\Users\Ryan.Adams\Music\
 
 python.exe" /sc onstart /ru SYSTEM /f
