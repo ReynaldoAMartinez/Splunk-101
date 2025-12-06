@@ -162,6 +162,9 @@ index=endpoint EventCode=13 host=FRONTDESK-PC1 TargetObject="*Run*"
 
 It launches Microsoft Edge during Windows login/startup, often to resume the last browsing session or display the default start page.
 
+___
+
+
 <div align="center">
  <p> 
 <h2>**SOC Investigation Report - Kerning City Dental (KCD)**</h2>
@@ -182,12 +185,12 @@ October 2025
 
 # **Findings (What did you find)**
 
-- A total of **66 failed login attempts (EventCode 4625)** were generated from the user account **Ryan.Adams** on **BACKOFFICE-PC1**.
+- A total of **62 failed login attempts (EventCode 4625)** were generated from the user account **Ryan.Adams** on **BACKOFFICE-PC1**.
 - This high number of authentication failures strongly suggests a **Brute Force (T1110)** or **Password Spraying attempt**, depending on whether multiple passwords or a single password was used.
 - A sequence of **privileged logons**, **lateral movement**, **remote process execution**, and **persistence creation** occurred on **Ryan Adams’ computer (BACKOFFICE-PC1)**.
 - The attacker authenticated from **FRONTDESK-PC1** to **BACKOFFICE-PC1** using Ryan Adams’ credentials.
 - A suspicious binary **python.exe** located in Ryan’s Music folder was executed.
-- The Python process made an outbound connection to **157.245.46.190:8888**, a non-KCD external IP.
+- The Python process made an outbound connection to **157[.]245[.]46[.]190[:]8888**, a non-KCD external IP.
 - PowerShell activity showed directory changes and scriptblock creation.
 - A **scheduled task named “PythonUpdate”** was created to execute the malicious python binary with **SYSTEM** privileges.
 - Strong indicators of **remote control**, **malware execution**, and **persistence** were found.
@@ -198,18 +201,7 @@ On **October 15, 2025**, shortly before 13:00 UTC, Ryan Adams noticed unexplaine
 
 Immediately after the connection, a malicious **python.exe** file in Ryan’s Music folder was executed and connected to an external command-and-control (C2) server. PowerShell commands were run, followed by creating a scheduled task that would maintain persistent access for the attacker.
 
-Timeline indicates a classic compromise involving:
-
-1. Privilege escalation
-2. Credential abuse
-3. Remote logon
-4. Malware execution
-5. Network beaconing
-6. Persistence creation
-
 No further malicious activity after October 15th 13:04 UTC was found, but the persistence mechanism would have allowed continued access until removed.
-
-# **Who, What, When, Where, Why, How**
 
 ## **Who – Who was involved?**
 
@@ -278,7 +270,7 @@ Root cause: **Credential compromise + inadequate privileged access controls**
 
 ## **How – How did this happen?**
 
-1. Attacker obtained Ryan Adams’ credentials - **Brute Force Multiple authentication failures attempting to guess a user's password.**
+1. Attacker obtained Ryan Adams’ credentials - **Brute Force Multiple authentication failures attempting to guess a user's password**
 2. Logged into FRONTDESK-PC1
 3. Used **Event 4648** explicit credentials to laterally move to BACKOFFICE-PC1
 4. Executed malicious Python binary
