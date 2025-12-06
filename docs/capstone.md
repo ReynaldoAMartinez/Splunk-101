@@ -220,7 +220,7 @@ Targeted credential attack. The repeated failures specifically against one user 
 This strengthens the assessment that Ryan Adams’ credentials were compromised through password spraying / brute force, not legitimate activity.
 
 - Unauthorized use of Ryan Adams’ credentials
-- Lateral movement from FRONTDESK-PC1 → BACKOFFICE-PC1
+- Lateral movement from FRONTDESK-PC1 to BACKOFFICE-PC1
 - Execution of suspicious Python malware
 - Outbound C2 connection
 - PowerShell scriptblock creation
@@ -239,7 +239,7 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 
 **Is it still happening?**
 
-- No additional C2 connections detected after 13:04.
+- No additional C2 connections detected after 13:04:59
 - However, the **persistence task would continue running** unless manually removed.
 
 ## **Where in the environment did this happen?**
@@ -258,7 +258,7 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 
 Most likely due to:
 
-- Credential theft or phishing of Ryan Adams
+- Brute force to access Ryan Adams's credentials
 - The attacker using compromised credentials to move laterally
 - Execution of malware designed to provide remote interactive access
 - Persistence creation to maintain long-term access
