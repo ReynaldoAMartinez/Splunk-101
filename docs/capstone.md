@@ -170,20 +170,6 @@ Previous output shows **PowerShell** activity showed directory changes and **scr
 
 ___
 
-Checked for "Registry Persistence Checks (Sysmon Event ID 13)"
-
-```bash
-index=endpoint EventCode=13 host=FRONTDESK-PC1 TargetObject="*Run*"
-| table _time, Image, TargetObject, Details, User
-| sort _time desc
-```
-
-<img width="2420" height="318" alt="image (12)" src="https://github.com/user-attachments/assets/17bbbec7-cff8-43eb-ad58-1611bbc63791" />
-
-It launches Microsoft Edge during Windows login/startup, often to resume the last browsing session or display the default start page.
-
-___
-
 
 <div align="center">
  <p> 
@@ -202,13 +188,13 @@ Reynaldo Martinez
 December 2025
 </p>
 </div>
-___
+
 
 # **Findings**
 
 - A total of **62 failed login attempts (EventCode 4625)** were generated from the user account **Ryan.Adams** on **FRONTDESK-PC1**.
 - This high number of authentication failures strongly suggests a **Brute Force (T1110)** or **Password Spraying attempt**, depending on whether multiple passwords or a single password was used.
-- A sequence of **privileged logons**, **lateral movement**, **remote process execution**, and **persistence creation** occurred on **Ryan Adams’ computer (BACKOFFICE-PC1)**.
+- A sequence of **privileged logons**, **lateral movement**, **remote process execution**, and **persistence creation** occurred on **computer (BACKOFFICE-PC1)**.
 - The attacker authenticated from **FRONTDESK-PC1** to **BACKOFFICE-PC1** using Ryan Adams’ credentials.
 - A suspicious binary **python.exe** located in Ryan’s Music folder was executed.
 - The Python process made an outbound connection to **157[.]245[.]46[.]190[:]8888**, a non-KCD external IP.
