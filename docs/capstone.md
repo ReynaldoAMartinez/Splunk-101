@@ -157,6 +157,21 @@ index=endpoint EventCode=13 host=FRONTDESK-PC1 TargetObject="*Run*"
 
 It launches Microsoft Edge during Windows login/startup, often to resume the last browsing session or display the default start page.
 
+**SOC Investigation Report - Kerning City Dental (KCD)**
+
+**Incident:**
+
+Suspicious Remote Activity on BACKOFFICE-PC1
+
+**Reported by:**
+
+Ryan Adams (CEO & Lead Dentist)
+
+**Date of Report:**
+
+October 2025
+
+
 # **Findings (What did you find)**
 
 - A total of **66 failed login attempts (EventCode 4625)** were generated from the user account **Ryan.Adams** on **BACKOFFICE-PC1**.
