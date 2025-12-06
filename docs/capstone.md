@@ -119,6 +119,9 @@ index=* host=FRONTDESK-PC1 EventCode=1 user="Ryan.Adams"
 ```
 
 <img width="2431" height="1128" alt="image (4)" src="https://github.com/user-attachments/assets/323a3b08-e3f6-4706-b9cb-bfcb9a758928" />
+
+From the previous query, I found a suspicious binary **python.exe** loated in Ryan's Music folder.
+
 ___
 
 Checked for "Find Network Connections (Sysmon Event ID 3)"
