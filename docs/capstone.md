@@ -16,7 +16,7 @@ Searching and filtering by user Ryan Adams
 ```bash
 index=* user="Ryan.Adams"
 ```
-I found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationIp, and 23 EventCode.
+I found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationIp (1 is an external IP), and 23 EventCode.
 
 
 <img width="528" height="251" alt="image (1)" src="https://github.com/user-attachments/assets/3d896f0b-9997-419d-959a-ae544bd8c375" />
