@@ -191,7 +191,6 @@ December 2025
 - The attacker authenticated from **FRONTDESK-PC1** to **BACKOFFICE-PC1** using Ryan Adams’ credentials.
 - A suspicious binary **python.exe** located in Ryan’s Music folder was executed.
 - The Python process made an outbound connection to **157[.]245[.]46[.]190[:]8888**, a non-KCD external IP.
-- PowerShell activity showed directory changes and scriptblock creation.
 - A **scheduled task named “PythonUpdate”** was created to execute the malicious python binary with **SYSTEM** privileges.
 - Strong indicators of **remote control**, **malware execution**, and **persistence** were found.
 
@@ -201,7 +200,7 @@ On **October 15, 2025**, shortly before 13:00 UTC, Ryan Adams noticed unexplaine
 
 Immediately after the connection, a malicious **python.exe** file in Ryan’s Music folder was executed and connected to an external command-and-control (C2) server. PowerShell commands were run, followed by creating a scheduled task that would maintain persistent access for the attacker.
 
-No further malicious activity after October 15th 13:04 UTC was found, but the persistence mechanism would have allowed continued access until removed.
+No further malicious activity after October 15th 13:04:59 UTC was found, but the persistence mechanism would have allowed continued access until removed.
 
 ## **Who was involved?**
 
@@ -213,7 +212,7 @@ No further malicious activity after October 15th 13:04 UTC was found, but the pe
  
 ## **What happened?**
 
-Before the attacker successfully authenticated with Ryan Adams’ account (EventCode 4624), there were 66 failed login attempts. This strongly indicates: Password guessing / brute-force activity
+Before the attacker successfully authenticated with Ryan Adams’ account (EventCode 4624), there were 62 failed login attempts. This strongly indicates: Password guessing / brute-force activity
 
 The attacker was likely attempting to guess Ryan’s password repeatedly until they succeeded.
 
@@ -237,7 +236,6 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 - **12:55:20** – Explicit credentials used for lateral movement (4648)
 - **13:00:33** – Execution of malicious `python.exe`
 - **13:00:34** – Outbound network connection to **157[.]245[.]46[.]190[:]8888**
-- **13:00:51** – PowerShell execution
 - **13:04:59** – Scheduled task created (“PythonUpdate”)
 
 **Is it still happening?**
@@ -275,8 +273,7 @@ Root cause: **Credential compromise + inadequate privileged access controls**
 3. Used **Event 4648** explicit credentials to laterally move to BACKOFFICE-PC1
 4. Executed malicious Python binary
 5. Python connected to remote C2 server
-6. PowerShell launched to adjust directories and execute commands
-7. Created a SYSTEM-level scheduled task to maintain persistence
+6. Created a SYSTEM-level scheduled task to maintain persistence
 
 The unexpected mouse movement observed by Ryan likely came from attacker remote control.
 
@@ -297,7 +294,6 @@ The unexpected mouse movement observed by Ryan likely came from attacker remote 
 
 - Add detections for:
     - Scheduled task creation
-    - PowerShell scriptblock logging anomalies
     - Process execution from unusual directories (Music folder)
     - Outbound connections to high-risk ports (e.g., 8888)
 
@@ -307,7 +303,7 @@ The unexpected mouse movement observed by Ryan likely came from attacker remote 
 - Limit lateral movement by reducing **local admin privileges**
 - Deploy endpoint protection that blocks unsigned/unknown Python executables
 - Implement **credential guard** and **LSASS protection**
-- Conduct security awareness training about phishing attacks
+- Conduct security awareness training about passwords attacks
 
 
 
