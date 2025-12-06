@@ -62,6 +62,8 @@ index=* EventCode=4625
 
 <img width="2430" height="352" alt="image (6)" src="https://github.com/user-attachments/assets/f05cf325-4418-4106-8895-8c4d634067e1" />
 
+A total of 62 failed login attempts (EventCode 4625) were generated from the user account Ryan.Adams on FRONTDESK-PC1.
+
 Checked for "Logon with Explicit Credentials --> Lateral movement (RunAs, PsExec)"
 
 ```bash
