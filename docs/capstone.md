@@ -43,15 +43,15 @@ index=* EventCode=4624 host=FRONTDESK-PC1  user="Ryan.Adams"
 
 <img width="2092" height="483" alt="image (5)" src="https://github.com/user-attachments/assets/a7152dcc-3be7-4186-b56f-07c21afc66a1" />
 
-It shows a source IP and the Logon Types for the successful logins
+It showed a source IP and the Logon Types for the successful logins
 
-src_ip = 172.16.0.184
+src_ip = **172.16.0.184**
 
 Logon_Type
 
-3 (Network) The logon occurred over the network, not locally.
+**3 (Network)** The logon occurred over the network, not locally.
 
-7 (Unlock)  The user unlocked a workstation that was already logged in.
+**7 (Unlock)**  The user unlocked a workstation that was already logged in.
 ___
 
 Checked for Failed Login Attempts (EventCode 4625)
