@@ -6,17 +6,17 @@ As a SOC analyst, your task is to investigate this incident using Splunk. Analyz
 
 # Solution
 
-Since we only have short information such as user, date & time to investigate, we will start running a SPL with a simple query. We set a date & time range between Oct 14, 2025 at midnight and Oct 16, 2025 at midnight to explore a wide period.
+Since we only have short information such as user, date & time, I started running a simple query for the time range between Oct 14, 2025 and Oct 16, 2025.
 
 
 <img width="655" height="153" alt="image" src="https://github.com/user-attachments/assets/820fa44a-38e6-4993-905e-59344ad97322" />
 
-Searched by user Ryan Adams
+Searching and filtering by user Ryan Adams
 
 ```bash
 index=* user="Ryan.Adams"
 ```
-We found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationIp, and 23 EventCode
+I found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationIp, and 23 EventCode.
 
 
 <img width="528" height="251" alt="image (1)" src="https://github.com/user-attachments/assets/3d896f0b-9997-419d-959a-ae544bd8c375" />
@@ -30,7 +30,7 @@ We found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationI
 
 <img width="529" height="493" alt="image (4)" src="https://github.com/user-attachments/assets/372cc3d6-c168-4c36-82dd-1c8475e96f2c" />
 
-Checked for successful logins (EventCode 4624)
+Checked for "Successful logins (EventCode 4624)"
 
 ```bash
 index=* EventCode=4624 host=FRONTDESK-PC1  user="Ryan.Adams" 
@@ -40,7 +40,7 @@ index=* EventCode=4624 host=FRONTDESK-PC1  user="Ryan.Adams"
 
 <img width="2092" height="483" alt="image (5)" src="https://github.com/user-attachments/assets/a7152dcc-3be7-4186-b56f-07c21afc66a1" />
 
-I found source IP and the Logon Type for the successful logins
+It shows a source IP and the Logon Types for the successful logins
 
 src_ip = 172.16.0.184
 
@@ -48,7 +48,7 @@ Logon_Type
 3 --> Network --> SMB file share access, lateral movement. -->  The logon occurred over the network, not locally.
 7 --> Unlock --> Workstation unlock --> The user unlocked a workstation that was already logged in.
 
-Failed Login Attempts (EventCode 4625)
+Checked for Failed Login Attempts (EventCode 4625)
 
 ```bash
 index=* EventCode=4625 
@@ -59,7 +59,7 @@ index=* EventCode=4625
 
 <img width="2430" height="352" alt="image (6)" src="https://github.com/user-attachments/assets/f05cf325-4418-4106-8895-8c4d634067e1" />
 
-Logon with Explicit Credentials --> Lateral movement (RunAs, PsExec)
+Checked for "Logon with Explicit Credentials --> Lateral movement (RunAs, PsExec)"
 
 ```bash
 index=* EventCode=4648 host=FRONTDESK-PC1  user="Ryan.Adams" 
@@ -68,7 +68,7 @@ index=* EventCode=4648 host=FRONTDESK-PC1  user="Ryan.Adams"
 ```
 <img width="2430" height="352" alt="image" src="https://github.com/user-attachments/assets/f7fdeec4-0cea-47d8-8d79-a46ca60c6b4c" />
 
-Special Privileges Assigned --> Admin logons, privilege escalation
+Checked for "Special Privileges Assigned --> Admin logons, privilege escalation"
 
 ```bash
 index=* EventCode=4672 host=FRONTDESK-PC1 user="Ryan.Adams" 
@@ -79,7 +79,7 @@ index=* EventCode=4672 host=FRONTDESK-PC1 user="Ryan.Adams"
 
 SeSecurityPrivilege --> is a Windows user right (privilege) that allows an account to manage auditing and security logs.
 
-PowerShell Script Block Logging - PowerShell-based attacks
+Checked for "PowerShell Script Block Logging - PowerShell-based attacks"
 
 ```bash
 index=endpoint EventCode=4104  host="FRONTDESK-PC1" 
@@ -96,7 +96,7 @@ python.exe" /sc onstart /ru SYSTEM /f
 
 This sets up a task that runs python.exe from Ryan.Adams’ Music folder every time the computer starts, with SYSTEM-level privileges.
 
-Track Process Execution (Sysmon Event ID 1)
+Checked fot "Track Process Execution (Sysmon Event ID 1)"
 
 ```bash
 index=* host=FRONTDESK-PC1 EventCode=1 user="Ryan.Adams" 
@@ -106,7 +106,7 @@ index=* host=FRONTDESK-PC1 EventCode=1 user="Ryan.Adams"
 
 <img width="2431" height="1128" alt="image (4)" src="https://github.com/user-attachments/assets/323a3b08-e3f6-4706-b9cb-bfcb9a758928" />
 
-Find Network Connections (Sysmon Event ID 3)
+Checked for "Find Network Connections (Sysmon Event ID 3)"
 
 ```bash
 index=* EventCode=3 host=FRONTDESK-PC1  
@@ -118,26 +118,24 @@ index=* EventCode=3 host=FRONTDESK-PC1
 
 <img width="2192" height="446" alt="image (5)" src="https://github.com/user-attachments/assets/c5244a7c-892c-4956-8804-2344a88200ba" />
 
-157.245.46.190 --> This IP was reported 106 times (AbuseIPDB)
+157[.]245[.]46[.]190 --> This IP was reported 106 times (AbuseIPDB)
 
 <img width="713" height="758" alt="image (6)" src="https://github.com/user-attachments/assets/0090150c-2567-4405-8e71-df67f3d1ec53" />
 
 <img width="1353" height="820" alt="image (7)" src="https://github.com/user-attachments/assets/ba7c6ef7-c990-4ddf-8872-5d9a669a5f1d" />
 
-And in Virustotal
+Also Virustotal reported the IP as malicious
 
 <img width="1622" height="746" alt="image (8)" src="https://github.com/user-attachments/assets/e5564a25-a9e6-4916-8329-9801f31029fd" />
 
 <img width="638" height="928" alt="image (9)" src="https://github.com/user-attachments/assets/07de85fa-0fa3-473c-9b1c-5f885a1cf7e4" />
 
-Linked to Sliver ---> Sliver C2 at 157[.]245[.]46[.]190[:]8888
-
-threat type --> botnet_cc
+The IP is linked to the malware Sliver C2 at 157[.]245[.]46[.]190[:]8888   and  a threat type: botnet_cc
 
 <img width="1133" height="482" alt="image (10)" src="https://github.com/user-attachments/assets/d700da3d-3a62-4134-bad9-d5a492f78695" />
 
 
-Search for Files Created (Sysmon Event ID 11)
+Checked for "Files Created (Sysmon Event ID 11)"
 
 ```bash
 index=endpoint EventCode=11 host=FRONTDESK-PC1 TargetFilename="*temp*"   user="Ryan.Adams" 
@@ -147,7 +145,7 @@ index=endpoint EventCode=11 host=FRONTDESK-PC1 TargetFilename="*temp*"   user="R
 
 <img width="2402" height="571" alt="image (11)" src="https://github.com/user-attachments/assets/9d78ef49-7e50-4c1b-b20c-f885bcdac40f" />
 
-Registry Persistence Checks (Sysmon Event ID 13)
+Checked for "Registry Persistence Checks (Sysmon Event ID 13)"
 
 ```bash
 index=endpoint EventCode=13 host=FRONTDESK-PC1 TargetObject="*Run*"
@@ -223,7 +221,7 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 - **12:55:20** – Successful remote login to FRONTDESK-PC1 (4624)
 - **12:55:20** – Explicit credentials used for lateral movement (4648)
 - **13:00:33** – Execution of malicious `python.exe`
-- **13:00:34** – Outbound network connection to **157.245.46.190:8888**
+- **13:00:34** – Outbound network connection to **157[.]245[.]46[.]190[:]8888**
 - **13:00:51** – PowerShell execution
 - **13:04:59** – Scheduled task created (“PythonUpdate”)
 
@@ -277,7 +275,7 @@ The unexpected mouse movement observed by Ryan likely came from attacker remote 
     
     `C:\Users\Ryan.Adams\Music\python.exe`
     
-- **Block outbound traffic** to **157.245.46.190** at perimeter firewall.
+- **Block outbound traffic** to **157[.]245[.]46[.]190** at perimeter firewall.
 - **Reimage BACKOFFICE-PC1** if malware integrity is uncertain.
 
 ### **Detection & Monitoring**
