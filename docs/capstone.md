@@ -30,6 +30,7 @@ I found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationIp
 Only one external IP 157[.]245[.]46[.]190
 
 <img width="529" height="493" alt="image (4)" src="https://github.com/user-attachments/assets/372cc3d6-c168-4c36-82dd-1c8475e96f2c" />
+___
 
 Checked for "Successful logins (EventCode 4624)"
 
@@ -50,6 +51,7 @@ Logon_Type
 3 (Network) The logon occurred over the network, not locally.
 
 7 (Unlock)  The user unlocked a workstation that was already logged in.
+___
 
 Checked for Failed Login Attempts (EventCode 4625)
 
@@ -63,6 +65,7 @@ index=* EventCode=4625
 <img width="2430" height="352" alt="image (6)" src="https://github.com/user-attachments/assets/f05cf325-4418-4106-8895-8c4d634067e1" />
 
 A total of 62 failed login attempts (EventCode 4625) were generated from the user account Ryan.Adams on FRONTDESK-PC1.
+___
 
 Checked for "Logon with Explicit Credentials --> Lateral movement (RunAs, PsExec)"
 
@@ -72,6 +75,7 @@ index=* EventCode=4648 host=FRONTDESK-PC1  user="Ryan.Adams"
 | sort  _time
 ```
 <img width="2430" height="352" alt="image" src="https://github.com/user-attachments/assets/f7fdeec4-0cea-47d8-8d79-a46ca60c6b4c" />
+___
 
 Checked for "Special Privileges Assigned --> Admin logons, privilege escalation"
 
@@ -83,6 +87,7 @@ index=* EventCode=4672 host=FRONTDESK-PC1 user="Ryan.Adams"
 <img width="2408" height="405" alt="image (1)" src="https://github.com/user-attachments/assets/8603bf57-7a3f-43dd-abc4-2191194e68e2" />
 
 SeSecurityPrivilege --> is a Windows user right (privilege) that allows an account to manage auditing and security logs.
+___
 
 Checked for "PowerShell Script Block Logging - PowerShell-based attacks"
 
@@ -100,6 +105,7 @@ schtasks.exe /create /tn "PythonUpdate" /tr "C:\Users\Ryan.Adams\Music\
 python.exe" /sc onstart /ru SYSTEM /f
 
 This sets up a task that runs python.exe from Ryan.Adams’ Music folder every time the computer starts, with SYSTEM-level privileges.
+___
 
 Checked fot "Track Process Execution (Sysmon Event ID 1)"
 
@@ -110,6 +116,7 @@ index=* host=FRONTDESK-PC1 EventCode=1 user="Ryan.Adams"
 ```
 
 <img width="2431" height="1128" alt="image (4)" src="https://github.com/user-attachments/assets/323a3b08-e3f6-4706-b9cb-bfcb9a758928" />
+___
 
 Checked for "Find Network Connections (Sysmon Event ID 3)"
 
@@ -139,6 +146,7 @@ The IP is linked to the malware Sliver C2 at 157[.]245[.]46[.]190[:]8888   and  
 
 <img width="1133" height="482" alt="image (10)" src="https://github.com/user-attachments/assets/d700da3d-3a62-4134-bad9-d5a492f78695" />
 
+___
 
 Checked for "Files Created (Sysmon Event ID 11)"
 
@@ -149,6 +157,7 @@ index=endpoint EventCode=11 host=FRONTDESK-PC1 TargetFilename="*temp*"   user="R
 ```
 
 <img width="2402" height="571" alt="image (11)" src="https://github.com/user-attachments/assets/9d78ef49-7e50-4c1b-b20c-f885bcdac40f" />
+___
 
 Checked for "Registry Persistence Checks (Sysmon Event ID 13)"
 
@@ -179,13 +188,14 @@ Reynaldo Martinez
 
 **Date of Report:**
 
-October 2025
+December 2025
 </p>
 </div>
+___
 
-# **Findings (What did you find)**
+# **Findings**
 
-- A total of **62 failed login attempts (EventCode 4625)** were generated from the user account **Ryan.Adams** on **BACKOFFICE-PC1**.
+- A total of **62 failed login attempts (EventCode 4625)** were generated from the user account **Ryan.Adams** on **FRONTDESK-PC1**.
 - This high number of authentication failures strongly suggests a **Brute Force (T1110)** or **Password Spraying attempt**, depending on whether multiple passwords or a single password was used.
 - A sequence of **privileged logons**, **lateral movement**, **remote process execution**, and **persistence creation** occurred on **Ryan Adams’ computer (BACKOFFICE-PC1)**.
 - The attacker authenticated from **FRONTDESK-PC1** to **BACKOFFICE-PC1** using Ryan Adams’ credentials.
@@ -195,7 +205,7 @@ October 2025
 - A **scheduled task named “PythonUpdate”** was created to execute the malicious python binary with **SYSTEM** privileges.
 - Strong indicators of **remote control**, **malware execution**, and **persistence** were found.
 
-# **Investigation Summary (What happened)**
+# **Investigation Summary**
 
 On **October 15, 2025**, shortly before 13:00 UTC, Ryan Adams noticed unexplained mouse movements on BACKOFFICE-PC1. Splunk logs confirm that his credentials were used minutes earlier for **lateral movement** from FRONTDESK-PC1.
 
@@ -203,7 +213,7 @@ Immediately after the connection, a malicious **python.exe** file in Ryan’s Mu
 
 No further malicious activity after October 15th 13:04 UTC was found, but the persistence mechanism would have allowed continued access until removed.
 
-## **Who – Who was involved?**
+## **Who was involved?**
 
 - **Victim:** Ryan Adams (BACKOFFICE-PC1)
 - **Attacker:** Unknown (used Ryan’s credentials; likely external actor)
@@ -211,7 +221,7 @@ No further malicious activity after October 15th 13:04 UTC was found, but the pe
     - **FRONTDESK-PC1** (source of lateral movement)
     - **BACKOFFICE-PC1** (compromised target)
  
-## **What – What happened?**
+## **What happened?**
 
 Before the attacker successfully authenticated with Ryan Adams’ account (EventCode 4624), there were 66 failed login attempts. This strongly indicates: Password guessing / brute-force activity
 
@@ -228,7 +238,7 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 - PowerShell scriptblock creation
 - Creation of persistence via Windows Scheduled Task (“PythonUpdate”)
 
-## **When – When did this occur and is it still happening?**
+## **When did this occur and is it still happening?**
 
 ### **Timeline (UTC)**
 
@@ -245,7 +255,7 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
 - No additional C2 connections detected after 13:04.
 - However, the **persistence task would continue running** unless manually removed.
 
-## **Where – Where in the environment did this happen?**
+## **Where in the environment did this happen?**
 
 - **Target system:** BACKOFFICE-PC1
 - **Source system:** FRONTDESK-PC1
@@ -257,7 +267,7 @@ This strengthens the assessment that Ryan Adams’ credentials were compromised 
     
     `157[.]245[.]46[.]190[:]8888`
 
-## **Why – Why did this happen? (If known)**
+## **Why did this happen?**
 
 Most likely due to:
 
@@ -268,7 +278,7 @@ Most likely due to:
 
 Root cause: **Credential compromise + inadequate privileged access controls**
 
-## **How – How did this happen?**
+## **How did this happen?**
 
 1. Attacker obtained Ryan Adams’ credentials - **Brute Force Multiple authentication failures attempting to guess a user's password**
 2. Logged into FRONTDESK-PC1
