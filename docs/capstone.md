@@ -8,7 +8,6 @@ As a SOC analyst, your task is to investigate this incident using Splunk. Analyz
 
 Since we only have short information such as user, date & time, I started running a simple query for the time range between Oct 14, 2025 and Oct 16, 2025.
 
-
 <img width="655" height="153" alt="image" src="https://github.com/user-attachments/assets/820fa44a-38e6-4993-905e-59344ad97322" />
 
 Searching and filtering by user Ryan Adams
