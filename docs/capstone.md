@@ -211,13 +211,11 @@ No further malicious activity after October 15th 13:04:59 UTC was found, but the
  
 ## **What happened?**
 
-Before the attacker successfully authenticated with Ryan Adams’ account (EventCode 4624), there were 62 failed login attempts. This strongly indicates: Password guessing / brute-force activity
-
-The attacker was likely attempting to guess Ryan’s password repeatedly until they succeeded.
-
-Targeted credential attack. The repeated failures specifically against one user account (Ryan.Adams) suggests intentional targeting. The successful login that followed is almost certainly unauthorized.
+Before the attacker successfully authenticated with Ryan Adams’ account (EventCode 4624), there were 62 failed login attempts. 
 
 This strengthens the assessment that Ryan Adams’ credentials were compromised through password spraying / brute force, not legitimate activity.
+
+The attacker was likely attempting to guess Ryan’s password repeatedly until they succeeded.
 
 - Unauthorized use of Ryan Adams’ credentials
 - Lateral movement from FRONTDESK-PC1 to BACKOFFICE-PC1
