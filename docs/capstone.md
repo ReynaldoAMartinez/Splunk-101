@@ -17,7 +17,6 @@ Searching and filtering by user Ryan Adams
 index=* user="Ryan.Adams"
 ```
 I found 1 host (FRONTDESK-PC1), 2 user (Ryan.Adams, ryan.adams), 6 DestinationIp, and 23 EventCode.
-Only one external IP 157[.]245[.]46[.]190
 
 
 <img width="528" height="251" alt="image (1)" src="https://github.com/user-attachments/assets/3d896f0b-9997-419d-959a-ae544bd8c375" />
@@ -28,6 +27,7 @@ Only one external IP 157[.]245[.]46[.]190
 
 <img width="538" height="369" alt="image (3)" src="https://github.com/user-attachments/assets/8c0381fd-18de-4650-b9ac-80c3dd247072" />
 
+Only one external IP 157[.]245[.]46[.]190
 
 <img width="529" height="493" alt="image (4)" src="https://github.com/user-attachments/assets/372cc3d6-c168-4c36-82dd-1c8475e96f2c" />
 
